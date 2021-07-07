@@ -1,0 +1,71 @@
+// === Ideal html CSS properties ===
+// (use these on all projects if possible)
+html, body {
+    // allows width and height definitions to account
+    // for an element's border and padding
+    // https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+    box-sizing: border-box;
+
+    // changes the root font size from 16 to 10px 
+    font-size: 62.5%;
+
+    // removes pre-defined margin and padding
+    margin: 0;
+    padding: 0;
+}
+
+// === Comparison between PX and REM ===
+// rem is dependent of the root font size set by the user's browser
+// and the html element. So, rem is preferred for compatibility and consistency
+// you can test this by changing the font size of your browser (not zoom)
+.px-size {
+    font-size: 50px;
+}
+.rem-size {
+    font-size: 5rem;
+}
+
+
+// consistent box style for positioning demo
+.box {
+    font-size: 2rem;
+    height: 20rem;
+    width: 20rem;
+    border: .1rem solid black;
+    color: white;
+}
+
+// === positioning ===
+// HTML elements can be <<TODO>>
+// You can set html elements to different positioning options.
+// 
+// Absolute - position
+.absolute {
+    background-color: red;
+    position: absolute;
+    right: 15%;
+    top: 30%;
+}
+
+.relative {
+    background-color: blue;
+    position: relative;
+    left: 5%;
+}
+
+.sticky {
+    background-color: green;
+    position: sticky;
+    top: 0;
+}
+// make page longer to show sticky element
+body {
+    height: 200vh;
+}
+
+.fixed {
+    background-color: purple;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
