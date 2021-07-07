@@ -1,6 +1,6 @@
 # Introduction to SCSS
 
-> SCSS (Syntactically Awesome Style Sheets) is CSS on steroids lol
+> SCSS (Sassy CSS) is CSS on steroids lol
 
 As your web projects expand in size, you'll start to see the advantages that SCSS brings over regular CSS. There are key features that make SCSS significantly better than CSS:
 
