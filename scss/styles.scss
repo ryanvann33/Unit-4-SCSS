@@ -16,63 +16,50 @@ html, body {
     padding: 0;
 }
 
-// === Comparison between PX and REM ===
-// rem is dependent of the root font size set by the user's browser
-// and the html element. So, rem is preferred for compatibility and consistency
-// you can test this by changing the font size of your browser (not zoom)
-.px-size {
-    font-size: 50px;
-}
-.rem-size {
-    font-size: 5rem;
+// you can start positioning stuff with flexbox using `display: flex`
+.parent {
+    display: flex;
+    font-size: 3rem;
+    background-color: lightcoral;
+    border: 5px solid red;
 }
 
+.parent-intro {
+    // flexbox automatically formats the element's children in a "row"
+    flex-direction: row;
 
-// consistent box style for positioning demo
-.box {
-    font-size: 2rem;
-    height: 20rem;
-    width: 20rem;
-    border: .1rem solid black;
-    color: white;
+    // // you can change the direction in which the child elements flow
+    // // "row-reverse" would reverse the current direction of order
+    // // try uncommenting the below code and observe the difference
+    // flex-direction: reverse;
+
+    // // you can also switch to a "column" flow where elements are stacked
+    // // vertically on top of each other
+    // flex-direction: column;
 }
 
-// === positioning ===
-// You can move HTML elements using the combination of top, bottom, left, right,
-// (position) along with the right position setting. Each setting has an unique property.
+.parent-spacing {
+    // // with flexbox, you can customize where your childs are positioned
+    // // `justify-content: center` puts all your childs to the center of the parent
+    justify-content: center;
 
-// `position: absolute` - takes the element away from the normal flow of HTML elements
-// and lets you position relative to its parent element (this case, the `body`)
-.absolute {
-    background-color: red;
-    position: absolute;
-    right: 15%;
-    top: 30%;
+    // // if you want, you can put the elements to the other end of the container...
+    // justify-content: flex-end;
+
+    // // ...or have it spaced out (find out the differences of these on the flexbox resource)
+    // justify-content: space-between;
+    // justify-content: space-around;
+    // justify-content: space-evenly;
 }
 
-// `position: relative` - the element stays in the normal HTML flow, letting you position
-// relative to itself *before* position changes (left, top, bottom, and right are reversed)
-.relative {
-    background-color: blue;
-    position: relative;
-    left: 5%;
-    top: 5%;
-}
-
-// `position: sticky` - allows the element to "stick" (switch from relative -> sticky)
-//  after the user scrolls to its defined position relative to the parent 
-//  (requires top, left, bottom, or right to be defined)
-.sticky {
-    background-color: green;
-    position: sticky;
-    top: 0;
-}
-
-// `position: fixed` - locks the element to a defined position relative to the viewport (screen)
-//  (requires top, left, bottom, or right to be defined)
-.fixed {
-    background-color: purple;
-    position: fixed;
-    bottom: 0;
-    right: 0;
+.parent-flexconstants {
+    // in this example, child-2 takes up twice the space as child 1 due to how the flex-grow
+    // constant was defined. Find more about flex-grow, flex-shrink, and flex-basis on the resource
+    .child-1 {
+        flex-grow: 1;
+    }
+    .child-2 {
+        // try changing this constant
+        flex-grow: 2;
+    }
 }

@@ -1,22 +1,18 @@
 // ignore CSS here; only for HTML example
 
-body {
-    height: 200vh;
+// provide padding and margin to each child example
+.child {
+    padding: 1rem;
+    margin: 1rem;
 }
 
-.sticky {
-    z-index: 100;
+// gives each child a different color to distinguish
+.child-1 {
+    background-color: cyan;
 }
-
-.absolute-container {
-    position: relative;
-    height: 70vh;
-    width: 100%;
-    box-sizing: border-box;
-    border: 5px solid red;
+.child-2 {
+    background-color: green;
 }
-
-.relative-before {
-    background-color: lightblue;
-    position: absolute;
+.child-3 {
+    background-color: yellow;
 }
