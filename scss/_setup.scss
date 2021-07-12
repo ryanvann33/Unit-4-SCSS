@@ -1,0 +1,22 @@
+// ignore CSS here; only for HTML example
+
+body {
+    height: 200vh;
+}
+
+.sticky {
+    z-index: 100;
+}
+
+.absolute-container {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    box-sizing: border-box;
+    border: 5px solid red;
+}
+
+.relative-before {
+    background-color: lightblue;
+    position: absolute;
+}

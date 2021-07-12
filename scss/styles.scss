@@ -1,3 +1,5 @@
+@import "setup";
+
 // === Ideal html CSS properties ===
 // (use these on all projects if possible)
 html, body {
@@ -36,10 +38,11 @@ html, body {
 }
 
 // === positioning ===
-// HTML elements can be <<TODO>>
-// You can set html elements to different positioning options.
-// 
-// Absolute - position
+// You can move HTML elements using the combination of top, bottom, left, right,
+// (position) along with the right position setting. Each setting has an unique property.
+
+// `position: absolute` - takes the element away from the normal flow of HTML elements
+// and lets you position relative to its parent element (this case, the `body`)
 .absolute {
     background-color: red;
     position: absolute;
@@ -47,22 +50,26 @@ html, body {
     top: 30%;
 }
 
+// `position: relative` - the element stays in the normal HTML flow, letting you position
+// relative to itself *before* position changes (left, top, bottom, and right are reversed)
 .relative {
     background-color: blue;
     position: relative;
     left: 5%;
+    top: 5%;
 }
 
+// `position: sticky` - allows the element to "stick" (switch from relative -> sticky)
+//  after the user scrolls to its defined position relative to the parent 
+//  (requires top, left, bottom, or right to be defined)
 .sticky {
     background-color: green;
     position: sticky;
     top: 0;
 }
-// make page longer to show sticky element
-body {
-    height: 200vh;
-}
 
+// `position: fixed` - locks the element to a defined position relative to the viewport (screen)
+//  (requires top, left, bottom, or right to be defined)
 .fixed {
     background-color: purple;
     position: fixed;
