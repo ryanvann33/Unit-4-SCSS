@@ -1,5 +1,6 @@
 # Using SCSS for your projects
-Technically, HTML only understands CSS, not (the superior) SCSS. We need a "compiler", or something that turns SCSS into regular CSS. 
+
+Technically, HTML only understands CSS, not (the superior) SCSS. We need a "compiler", or something that turns SCSS into regular CSS.
 
 Live Sass Compiler is an example of a SCSS compiler. You've already installed it when setting up VSCode, but we will now be using this extension.
 

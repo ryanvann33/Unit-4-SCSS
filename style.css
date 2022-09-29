@@ -1,0 +1,89 @@
+html, body, *{
+    padding: 0; 
+    margin: 0;   
+    box-sizing: border-box;
+    font-size: 100%;
+    background-color: pink;
+    
+}
+
+.parent{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
+}
+.child{
+    border: 1px solid pink;
+    width: 28%;
+    text-align: center;
+    
+    
+}
+.px-size{
+    font-size: 20px;
+}
+.rem-size{
+    font-size: 2rem;
+}
+.em-size{
+    font-size: 5em;
+}
+h2{
+    margin: 1rem;
+}
+.child{
+    width: 28%;
+}
+.child-1{
+    border: 3px solid pink;
+    height: 500px;
+    width: 500px;
+    margin-left: 20px;
+}
+.child-2{
+    border: 3px solid pink;
+    height: 400px;
+    width: 400px;
+    
+}
+.child-3{
+    border: 3px solid pink
+    height: 400px;
+    wid
+    margin right: 30px;
+    
+    
+}
+.child-4{
+    border-color: pink;
+}
+
+h1{
+    text-align: center;
+    font-size: 70px;
+    padding-top: 30px;
+}
+.office{
+    width: 400px;
+    height: 400px;
+}
+.breakingbad{
+    width: 400px;
+    height: 400px;
+}
+.lucifer{
+    width: 400px;
+    height: 400px;
+}
+.spongebob{
+    height: 400px;
+    width: 400px;
+}
+.aot{
+    height: 400px;
+    width: 400px;
+    
+}
