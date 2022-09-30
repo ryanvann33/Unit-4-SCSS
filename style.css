@@ -31,9 +31,8 @@ html, body, *{
 .em-size{
     font-size: 5em;
 }
-h2{
-    margin: 1rem;
-}
+
+
 .child{
     width: 28%;
 }
@@ -50,11 +49,9 @@ h2{
     
 }
 .child-3{
-    border: 3px solid pink
-    height: 400px;
-    wid
-    margin right: 30px;
+    border: 3px solid pink;
     
+   
     
 }
 .child-4{
@@ -85,5 +82,21 @@ h1{
 .aot{
     height: 400px;
     width: 400px;
-    
+    flex-wrap: wrap;
+}
+.theboys{
+    height: 400px;
+    width: 400px;
+}
+.moonknight{
+    height: 400px;
+    width: 400px;
+}
+.strangerthings{
+    height: 400px;
+    width: 400px; 
+}
+.you{
+    height: 400px;
+    width: 400px; 
 }
